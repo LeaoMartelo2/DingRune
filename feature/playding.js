@@ -11,11 +11,21 @@ register("entityDeath", (entity) => {
     if(!Config.dingaling || entity == null || cooldown) {
         return;
     }
+    const distance = entity.distanceTo(Player.getPlayer())
+
+    if(distance > 16) {
+        return;
+    }
 
     cooldown = true;
     sound = Config.sound_played;
+
+
+
     //volume = Config.volume;
     //pitch = Config.pitch;
+
+
     ding();
 
     //took this inplementation straight from Runes (ct import runes amazing job pls dont kill me)
