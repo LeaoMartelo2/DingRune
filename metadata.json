@@ -1,0 +1,10 @@
+{
+    "name": "DingRune",
+    "description": "ding ding ding",
+    "version": "1.0.0",
+    "author": "LeaoMartelo",
+    "entry": "index.js",
+    "requires": [
+        "Vigilance"
+    ]
+} 
